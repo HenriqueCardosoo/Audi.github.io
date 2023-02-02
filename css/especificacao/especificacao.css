@@ -64,3 +64,18 @@
     font-size: 17px;
   }
 }
+
+@media (max-width: 400px) {
+  .conheca {
+    padding: 20px;
+    position: relative;
+    top: -3.5rem;
+  }
+  .conheca h1 {
+    font-size: 1.6rem;
+  }
+
+  .conheca a {
+    font-size: 15px;
+  }
+}

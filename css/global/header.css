@@ -45,7 +45,7 @@
     width: 75px;
     position: absolute;
     top: 9px;
-    right: 43%;
+    right: 45%;
   }
 }
 
@@ -61,5 +61,20 @@
 @media (max-width: 600px) {
   .header-menu a {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-menu {
+    gap: 10px;
+  }
+  .header-menu a {
+    font-size: 14px;
+  }
+  .header-bg {
+    padding: 20px;
+  }
+  .header img {
+    width: 55px;
   }
 }
