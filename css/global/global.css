@@ -1,0 +1,65 @@
+body {
+  margin: 0px;
+  font-family: arial, sans-serif;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.imagem-bg img {
+  max-width: 100%;
+  right: 100%;
+  width: 100%;
+}
+
+.conteudo {
+  position: relative;
+}
+
+.texto {
+  position: absolute;
+  font-size: 45px;
+  left: 40px;
+  bottom: 70px;
+  color: #ffffff;
+}
+
+.botao {
+  border: 2px solid #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  left: 40px;
+  bottom: 60px;
+  text-decoration: none;
+  color: #000000;
+  background: #ffffff;
+}
+
+.botao-2 {
+  border: 2px solid #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  left: 45px;
+  bottom: 60px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  .texto {
+    font-size: 30px;
+  }
+  .botao {
+    padding: 10px;
+    bottom: 50px;
+  }
+  .botao-2 {
+    padding: 10px;
+    bottom: 50px;
+  }
+}

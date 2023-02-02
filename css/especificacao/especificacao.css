@@ -1,0 +1,66 @@
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px;
+  gap: 3rem;
+  position: relative;
+}
+
+.especificacao img {
+  width: 100%;
+}
+
+.conheca h1 {
+  font-size: 3rem;
+}
+
+.conheca {
+  bottom: -10rem;
+}
+
+.conheca p {
+  font-size: 15px;
+}
+
+.conheca a {
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid #000000;
+  padding: 20px 40px;
+  position: absolute;
+  text-decoration: none;
+  color: #000000;
+}
+
+.conheca a:hover {
+  border-color: #717171;
+  color: #717171;
+}
+
+@media (max-width: 1200px) {
+  .conheca a {
+    font-size: 15px;
+  }
+  .conheca h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .sobre {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .conheca {
+    position: absolute;
+    padding: 30px;
+  }
+  .conheca h1 {
+    font-size: 1.5rem;
+  }
+  .conheca p {
+    font-size: 17px;
+  }
+}
