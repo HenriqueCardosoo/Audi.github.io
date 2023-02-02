@@ -2,6 +2,23 @@
   text-decoration: none;
   color: #7d7d7d;
   font-size: 18px;
+  position: relative;
+  padding: 10px 0px 10px;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #7d7d7d;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover:after {
+  width: 100%;
 }
 
 .header-bg {
@@ -46,6 +63,9 @@
     position: absolute;
     top: 9px;
     right: 45%;
+  }
+  .header a::after {
+    display: none;
   }
 }
 
