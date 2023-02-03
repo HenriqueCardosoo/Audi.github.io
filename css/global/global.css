@@ -15,6 +15,12 @@ ul {
   width: 100%;
 }
 
+.imagem-respo img {
+  max-width: 100%;
+  right: 100%;
+  width: 100%;
+}
+
 .conteudo {
   position: relative;
 }
@@ -61,5 +67,17 @@ ul {
   .botao-2 {
     padding: 10px;
     bottom: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .imagem-bg {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .imagem-respo {
+    display: none;
   }
 }
