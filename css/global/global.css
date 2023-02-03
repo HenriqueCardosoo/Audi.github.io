@@ -58,14 +58,19 @@ ul {
 @media (max-width: 800px) {
   .texto {
     font-size: 30px;
+    bottom: 8rem;
+    left: 1rem;
   }
   .botao {
-    padding: 10px;
-    bottom: 50px;
+    bottom: 6rem;
+    left: 1rem;
   }
   .botao-2 {
-    padding: 10px;
-    bottom: 50px;
+    bottom: 6rem;
+    left: 1.5rem;
+  }
+  .conteudo h1 {
+    font-size: 35px;
   }
 }
 
