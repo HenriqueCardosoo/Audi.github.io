@@ -58,19 +58,46 @@ ul {
 @media (max-width: 800px) {
   .texto {
     font-size: 30px;
-    bottom: 8rem;
+    bottom: 7rem;
     left: 1rem;
   }
   .botao {
     bottom: 6rem;
     left: 1rem;
+    padding: 15px;
+    font-size: 13px;
   }
   .botao-2 {
     bottom: 6rem;
-    left: 1.5rem;
+    left: 1rem;
+    padding: 15px;
+    font-size: 13px;
   }
   .conteudo h1 {
     font-size: 35px;
+  }
+}
+
+@media (max-width: 350px) {
+  .texto {
+    font-size: 30px;
+    bottom: 7rem;
+    left: 1rem;
+  }
+  .botao {
+    bottom: 6rem;
+    left: 1rem;
+    padding: 15px;
+    font-size: 10px;
+  }
+  .botao-2 {
+    bottom: 6rem;
+    left: 1rem;
+    padding: 15px;
+    font-size: 10px;
+  }
+  .conteudo h1 {
+    font-size: 25px;
   }
 }
 

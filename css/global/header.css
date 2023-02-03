@@ -4,6 +4,8 @@
   font-size: 18px;
   position: relative;
   padding: 10px 0px 10px; /*diminuir no responsivo */
+  display: flex;
+  justify-content: center;
 }
 
 .header-menu a::after {
@@ -44,6 +46,7 @@
 .header-menu {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 
 @media (max-width: 800px) {
@@ -89,7 +92,24 @@
     gap: 10px;
   }
   .header-menu a {
-    font-size: 14px;
+    font-size: 12px;
+    left: 40px;
+  }
+  .header-bg {
+    padding: 20px;
+  }
+  .header img {
+    width: 50px;
+    right: 42%;
+  }
+}
+
+@media (max-width: 350px) {
+  .header-menu {
+    gap: 10px;
+  }
+  .header-menu a {
+    font-size: 8px;
   }
   .header-bg {
     padding: 20px;
