@@ -4,8 +4,6 @@
   font-size: 18px;
   position: relative;
   padding: 10px 0px 10px; /*diminuir no responsivo */
-  display: flex;
-  justify-content: center;
 }
 
 .header-menu a::after {
@@ -100,7 +98,7 @@
   }
   .header img {
     width: 50px;
-    right: 44%;
+    right: 43%;
   }
 }
 
