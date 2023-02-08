@@ -15,13 +15,49 @@ ul {
   width: 100%;
 }
 
+.imagem-bg2 img {
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  top: 170px;
+}
+
 .imagem-respo img {
   max-width: 100%;
   right: 100%;
 }
 
+.res {
+  position: relative;
+}
+
+.imagem-res img {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+}
+
 .conteudo {
   position: relative;
+}
+
+.introducao {
+  position: relative;
+}
+
+.introducao-container {
+  background: #141414;
+  position: absolute;
+}
+
+.introducao p {
+  color: #e7e7e7;
+  margin-left: 10px;
+}
+
+.introducao-container h2 {
+  color: #f7f7f7;
+  padding: 20px;
 }
 
 .texto {
@@ -105,10 +141,43 @@ ul {
   .imagem-bg {
     display: none;
   }
+  .imagem-bg2 img {
+    margin-top: -150px;
+  }
 }
 
 @media (min-width: 800px) {
   .imagem-respo {
     display: none;
   }
+  .imagem-bg2 img {
+    top: 20px;
+  }
 }
+
+@media (max-width: 690px) {
+  .imagem-bg2 {
+    margin-top: 120px;
+  }
+  .introducao {
+    top: 90px;
+  }
+}
+
+@media (max-width: 500px) {
+  .imagem-bg2 {
+    margin-top: 220px;
+  }
+}
+
+@media (max-width: 430px) {
+  .imagem-bg2 {
+    margin-top: 22px;
+  }
+  .introducao-container h2 {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* arrumar tamanho nas telas */
