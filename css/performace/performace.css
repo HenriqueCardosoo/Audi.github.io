@@ -135,6 +135,13 @@
   }
 }
 
+@media (max-width: 500px) {
+  .performace-container {
+    bottom: -80px;
+    padding: 90px;
+  }
+}
+
 @media (max-width: 700px) {
   .numeros {
     font-size: 25px;
