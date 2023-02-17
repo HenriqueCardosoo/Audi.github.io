@@ -1,45 +1,142 @@
+.performace {
+  position: relative;
+}
+
 .performace-container {
-  background: #141414;
+  background: #ffffff;
   position: relative;
   max-width: 100%;
   text-align: center;
   flex-wrap: wrap;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  padding-bottom: 1200px;
 }
 
-.performace-container img {
-  max-width: 100%;
-  border-radius: 4px;
+.performace-conteudo {
+  /* grid-row: 1; */
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 45px;
+  font-weight: lighter;
+  vertical-align: baseline;
+  margin: 0px;
 }
 
-.performace {
+.performace-cv {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-weight: 700;
+  justify-content: center;
+  height: 60px;
+  margin-bottom: 18px;
+  padding: 90px;
+}
+
+.letras {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.potencia1 {
+  color: #333333;
+  margin: 0px;
+  position: relative;
+  bottom: -40px;
+}
+
+.potencia2 {
+  color: #333333;
+  margin: 0px;
+  position: relative;
+  bottom: -40px;
+  left: 50px;
+}
+
+.potencia3 {
+  color: #333333;
+  margin: 0px;
+  position: relative;
+  bottom: -40px;
+  left: 70px;
+}
+
+.numeros {
+  font-size: 50px;
+  text-align: center;
+  border-right: 1px solid #000000;
   position: relative;
 }
 
-.performace-bg {
-  /* grid-row: 1; */
-  background-color: #141414;
-  color: white;
+.velocidade {
+  position: relative;
+  left: -120px;
 }
 
-@media (max-width: 800px) {
-  .performace-container {
+/* .number {
+  position: relative;
+  left: -129px;
+}
+
+.number2 {
+  position: relative;
+  left: -120px;
+}
+
+.velocidade {
+  position: relative;
+  left: 120px;
+} */
+
+.numeros:nth-child(6) {
+  border: none;
+  position: relative;
+  left: -80px;
+}
+
+@media (max-width: 1200px) {
+  .numeros {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .numeros {
+    font-size: 30px;
+  }
+  .performace p {
+    top: 9px;
+  }
+}
+
+@media (max-width: 970px) {
+  .numeros {
+    font-size: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: none;
+    margin: 0px 30px;
+  }
+  .performace p {
+    top: 40px;
+    left: auto;
+  }
+  .performace-cv {
+    display: grid;
     grid-template-columns: 1fr;
+    padding: 0px;
+    position: relative;
   }
-  .performace-bg {
-    grid-row: auto;
+  .numeros:nth-child(6) {
+    left: auto;
+  }
+  .velocidade {
+    left: auto;
   }
 }
 
-@media (max-width: 500px) {
-  .performace {
-    top: 160px;
-  }
-}
-
-@media (max-width: 430px) {
-  .performace {
-    top: auto;
+@media (max-width: 700px) {
+  .numeros {
+    font-size: 25px;
   }
 }
