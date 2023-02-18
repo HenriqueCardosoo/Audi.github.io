@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: 1fr;
-  padding-bottom: 1200px;
+  padding-bottom: 500px;
 }
 
 .performace-conteudo {
@@ -74,6 +74,38 @@
   left: -120px;
 }
 
+.dimensao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px;
+  gap: 3rem;
+  position: relative;
+}
+
+.eu h1 {
+  font-size: 2.3rem;
+  position: relative;
+  bottom: -90px;
+}
+
+.eu a {
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid #000000;
+  background: #000000;
+  padding: 20px 40px;
+  position: relative;
+  text-decoration: none;
+  color: #e7e7e7;
+  bottom: -120px;
+}
+
+.eu a:hover {
+  border-color: #717171;
+  color: #e7e7e7;
+  background-color: #4c4c4c;
+  transition-duration: 250ms;
+}
 /* .number {
   position: relative;
   left: -129px;
@@ -138,12 +170,66 @@
 @media (max-width: 500px) {
   .performace-container {
     bottom: -80px;
-    padding: 90px;
+    /* padding: 90px; */
   }
 }
 
 @media (max-width: 700px) {
   .numeros {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .eu a {
+    font-size: 15px;
+  }
+  .eu h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .dimensao {
+    grid-template-columns: 1fr;
+  }
+  .eu {
+    position: relative;
+    top: -8.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .eu {
+    position: relative;
+    padding: 30px;
+    bottom: -250px;
+  }
+  .eu h1 {
+    font-size: 1.5rem;
+  }
+  .eu p {
+    font-size: 17px;
+  }
+  .dimensao img {
+    position: relative;
+  }
+}
+
+@media (max-width: 430px) {
+  .eu {
+    padding: 20px;
+    position: relative;
+    top: -8.5rem;
+  }
+  .eu h1 {
+    font-size: 1.6rem;
+  }
+
+  .eu a {
+    font-size: 15px;
+    width: 65%;
+    display: block;
+    padding: 20px 50px;
   }
 }
