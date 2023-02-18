@@ -202,8 +202,6 @@
 @media (max-width: 500px) {
   .eu {
     position: relative;
-    padding: 30px;
-    bottom: -250px;
   }
   .eu h1 {
     font-size: 1.5rem;
@@ -218,9 +216,9 @@
 
 @media (max-width: 430px) {
   .eu {
-    padding: 20px;
+    padding: 11px;
     position: relative;
-    top: -8.5rem;
+    /* top: -8.5rem; */
   }
   .eu h1 {
     font-size: 1.6rem;
