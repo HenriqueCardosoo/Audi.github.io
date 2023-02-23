@@ -11,6 +11,7 @@
   display: grid;
   grid-template-columns: 1fr;
   padding-bottom: 500px;
+  top: 200px;
 }
 
 .performace-conteudo {
@@ -32,6 +33,7 @@
   height: 60px;
   margin-bottom: 18px;
   padding: 90px;
+  margin-left: 50px;
 }
 
 .letras {
@@ -158,6 +160,8 @@
     grid-template-columns: 1fr;
     padding: 0px;
     position: relative;
+    left: 0px;
+    margin-left: 0px;
   }
   .numeros:nth-child(6) {
     left: auto;
@@ -165,18 +169,8 @@
   .velocidade {
     left: auto;
   }
-}
-
-@media (max-width: 500px) {
   .performace-container {
-    bottom: -80px;
-    /* padding: 90px; */
-  }
-}
-
-@media (max-width: 700px) {
-  .numeros {
-    font-size: 25px;
+    top: auto;
   }
 }
 
@@ -189,13 +183,19 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .dimensao {
     grid-template-columns: 1fr;
   }
   .desempenho {
     position: relative;
     top: -8.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .numeros {
+    font-size: 25px;
   }
 }
 
@@ -211,6 +211,10 @@
   }
   .dimensao img {
     position: relative;
+  }
+  .performace-container {
+    bottom: -80px;
+    /* padding: 90px; */
   }
 }
 

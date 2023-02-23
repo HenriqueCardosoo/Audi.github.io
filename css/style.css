@@ -7,5 +7,7 @@
 /* performace */
 @import "./performace/performace.css";
 
+@import "./motor/motor.css";
+
 /* experiencia */
 @import "./experiencia/experiencia.css";

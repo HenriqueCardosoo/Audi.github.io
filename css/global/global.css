@@ -133,6 +133,24 @@ ul {
   }
   .conteudo h1 {
     font-size: 35px;
+    bottom: 245px;
+    font-weight: 400;
+  }
+  .botao {
+    display: block;
+    margin-right: 30px;
+    top: -140px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+  }
+  .botao-2 {
+    display: block;
+    margin-right: 30px;
+    top: -135px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
   }
 }
 
