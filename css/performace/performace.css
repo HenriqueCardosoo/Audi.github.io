@@ -135,12 +135,33 @@
   }
 }
 
+@media (max-width: 1090px) {
+  .numeros {
+    font-size: 35px;
+    top: 10px;
+  }
+}
+
 @media (max-width: 1060px) {
   .numeros {
     font-size: 30px;
   }
   .performace p {
     top: 9px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .numeros {
+    font-size: 25px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 985px) {
+  .numeros {
+    font-size: 20px;
+    top: 10px;
   }
 }
 
