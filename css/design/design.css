@@ -1,0 +1,43 @@
+.design-texto {
+  margin: 0px;
+  text-align: center;
+}
+
+.design-titulo {
+  font-size: 60px;
+  font-weight: 200;
+}
+
+.design-paragrafo {
+  top: -16px;
+  position: relative;
+  color: #4c4c4c;
+  max-width: 1248px;
+  text-align: start;
+}
+
+* .design-img img {
+  max-width: 100%;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .design-texto h2 {
+    font-size: 50px;
+    align-items: center;
+  }
+  .design-img {
+    margin: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 750px) {
+  .design-texto h2 {
+    font-size: 40px;
+    text-align: start;
+  }
+}

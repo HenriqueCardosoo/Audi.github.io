@@ -18,6 +18,12 @@
   color: #4c4c4c;
 }
 
+.motor-p {
+  text-align: center;
+  color: #4c4c4c;
+  margin-left: 20px;
+}
+
 .motor-img img {
   position: absolute;
   height: 100%;
