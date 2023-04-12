@@ -1,10 +1,7 @@
 .motor {
   margin: 0px;
   padding: 30px;
-  flex-wrap: wrap;
-  overflow: hidden;
-  width: 79ch;
-  max-width: 100%;
+  text-align: center;
 }
 
 .motor h2 {
@@ -25,14 +22,6 @@
 }
 
 .motor-img img {
-  position: absolute;
-  height: 100%;
-  width: 95%;
-  object-fit: cover;
-  max-width: 100%;
-}
-
-.motor-img2 img {
   max-width: 100%;
 }
 
@@ -49,14 +38,5 @@
   .motor {
     width: auto;
     padding: 30px;
-  }
-  .motor-img {
-    display: none;
-  }
-}
-
-@media (max-width: 700px) {
-  .motor-img {
-    display: none;
   }
 }

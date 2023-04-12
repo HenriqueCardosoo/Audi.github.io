@@ -3,20 +3,18 @@
   text-align: center;
 }
 
-.design-titulo {
+.design-texto h2 {
   font-size: 60px;
   font-weight: 200;
 }
 
-.design-paragrafo {
+.design-texto p {
   top: -16px;
   position: relative;
   color: #4c4c4c;
-  max-width: 1248px;
-  text-align: start;
 }
 
-* .design-img img {
+.design-img img {
   max-width: 100%;
   align-items: center;
   margin: auto;
@@ -39,5 +37,9 @@
   .design-texto h2 {
     font-size: 40px;
     text-align: start;
+    padding: 20px;
+  }
+  .design-texto p {
+    padding: 20px;
   }
 }
