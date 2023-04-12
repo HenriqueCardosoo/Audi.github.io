@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>audi.com.br</title>
 
-    <link rel="preload" href="css/style.min.css" as="style">
+    <!-- <link rel="preload" href="css/style.min.css" as="style"> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -39,7 +39,7 @@
 
 
     <div class="conteudo">
-        <h1 class="texto">RS 6 Avant</h1>
+        <h1 class="texto fadeInLeft" data-anime="200">RS 6 Avant</h1>
 
 
         <a class="botao" href="./config.html">Configure agora</a>
@@ -51,7 +51,7 @@
                 <img src="img/audi-lateral.jpeg" alt="">
             </div>
             <div class="conheca">
-                <h1>Conheça o RS 6 Avant</h1>
+                <h1 class="fadeInDown" data-anime="400">Conheça o RS 6 Avant</h1>
                 <p>Vá a uma concessionária Audi e agende seu test drive.</p>
                 <a href="etiqueta.html">Etiqueta de segurança veicular digital</a>
             </div>
@@ -85,27 +85,27 @@
     <article class="performace">
         <div class="performace-container">
             <div class="performace-conteudo">
-                <p>Alta performance em números</p>
+                <p data-anime="200">Alta performance em números</p>
             </div>
             <div class="performace-cv">
-                <p class="potencia1"><span>Potência</span></p>
+                <p class="potencia1 init-hidden" data-anime="200"><span>Potência</span></p>
                 <div class="numeros">
                     <!-- <div class="velocidade"> -->
-                    <h2 class="velocidade">441<span class="letras">kw</span></h2>
+                    <h2 class="velocidade init-hidden" data-anime="200">441<span class="letras">kw</span></h2>
                     <!-- </div> -->
                 </div>
 
-                <p class="potencia2"><span>Aceleração (0-100 km/h)</span></p>
+                <p class="potencia2 init-hidden" data-anime="400"><span>Aceleração (0-100 km/h)</span></p>
                 <div class="numeros">
                     <!-- <div class="velocidade"> -->
-                    <h2 class="velocidade">3.6<span class="letras">s</span></h2>
+                    <h2 class="velocidade init-hidden" data-anime="400">3.6<span class="letras">s</span></h2>
                     <!-- </div> -->
                 </div>
 
 
-                <p class="potencia3"><span>Torque máximo</span></p>
+                <p class="potencia3 init-hidden" data-anime="600"><span>Torque máximo</span></p>
                 <div class="numeros">
-                    <h2>800<span class="letras">Nm</span></h2>
+                    <h2 data-anime="600" class="init-hidden">800<span class="letras">Nm</span></h2>
                 </div>
             </div>
         </div>
@@ -138,12 +138,12 @@
         <strong class="motor-texto">De modo que nenhum dia permanece comum:</strong>o motor V8 biturbo TFSI de 4,0 litrosimpulsionam o veículo a uma velocidade máxima de até 305 km/h.
     </p>
     <article>
-        <div class="design-texto">
+        <div class="design-texto init-hidden">
             <h2>O forte magnetismo <br>do design exterior</h2>
             <p>O Audi RS 6 Avant se distingue por trazer diversos elementos que remetem ao estilo RS: com uma ampla carroceria e caixas de rodas largas, chama a atenção para o design como um todo. Para completar a atmosfera moderna e esportiva, o modelo apresenta ainda grade Singleframe, para-choque clássico dos modelos RS e grandes entradas de ar nas laterais.</p>
         </div>
         <div class="design-img">
-            <img src="img/1920x1080-rs6_2020_1640-design.avif" alt="">
+            <img class="init-hidden" src="img/1920x1080-rs6_2020_1640-design.avif" alt="">
         </div>
     </article>
     <article>
@@ -153,6 +153,8 @@
             <div class="design-img"><img src="img/1920x1080-rs6_iterior_2020_2012_1.avif" alt=""></div>
         </div>
     </article>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
