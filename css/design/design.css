@@ -1,25 +1,26 @@
 .design-texto {
   margin: 0px;
-  text-align: center;
-  padding: 20px;
+  text-align: left;
 }
 
 .design-texto h2 {
   font-size: 60px;
   font-weight: 200;
+  padding: 30px;
 }
 
 .design-texto p {
   top: -16px;
   position: relative;
   color: #4c4c4c;
+  padding: 30px;
 }
 
 .design-img img {
   max-width: 100%;
   align-items: center;
   margin: auto;
-  width: 90%;
+  width: 100%;
   display: block;
 }
 
@@ -40,6 +41,18 @@
   font-size: 60px;
 }
 
+.porta-malas-texto {
+  color: #e7e7e7;
+  text-align: left;
+  padding: 30px;
+}
+
+.porta-malas-texto h2 {
+  color: #f7f7f7;
+  font-size: 60px;
+  font-weight: 200;
+}
+
 .suspensao-texto {
   color: #e7e7e7;
   text-align: left;
@@ -48,7 +61,7 @@
 
 .suspensao-texto h2 {
   color: #f7f7f7;
-  font-size: 60px;
+  font-size: 25px;
 }
 
 .suspensao-bg {
@@ -70,11 +83,14 @@
   .design-texto h2 {
     font-size: 40px;
     text-align: start;
-    padding: 20px;
+    padding: 30px;
   }
   .design-texto p {
-    padding: 20px;
+    padding: 30px;
     text-align: left;
+  }
+  .porta-malas-texto h2 {
+    font-size: 40px;
   }
   .suspensao-texto {
     padding: 30px;
