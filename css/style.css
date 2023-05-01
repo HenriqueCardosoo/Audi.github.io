@@ -17,3 +17,9 @@
 
 /* utilidades*/
 @import "./utilidades/animacao.css";
+
+/* interior */
+@import "./interior/interior.css";
+
+/* footer */
+@import "./footer/footer.css";

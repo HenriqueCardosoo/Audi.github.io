@@ -24,7 +24,7 @@
   display: block;
 }
 
-.interior-bg {
+/* .interior-bg {
   background: #141414;
   text-align: center;
   padding: 100px;
@@ -39,7 +39,7 @@
 .interior-texto h2 {
   color: #f7f7f7;
   font-size: 60px;
-}
+} */
 
 .porta-malas-texto {
   color: #e7e7e7;
@@ -61,11 +61,34 @@
 
 .suspensao-texto h2 {
   color: #f7f7f7;
-  font-size: 25px;
+  font-size: 60px;
 }
 
 .suspensao-bg {
   background-color: #141414;
+}
+
+/* .container-interior {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #141414;
+}
+
+.interior {
+  color: #e7e7e7;
+  font-weight: 200;
+  margin: 30px;
+  position: relative;
+}
+
+.interior-img img {
+  max-width: 100%;
+} */
+
+.disponibilidade {
+  background-color: #ffffff;
+  margin: 30px;
+  font-size: 14px;
 }
 
 @media (max-width: 900px) {
@@ -77,6 +100,9 @@
     margin: auto;
     display: block;
   }
+  /* .container-interior {
+    grid-template-columns: none;
+  } */
 }
 
 @media (max-width: 750px) {
@@ -99,12 +125,12 @@
     font-size: 40px;
     font-weight: 200;
   }
-  .interior-bg {
+  /* .interior-bg {
     padding: 30px;
     text-align: start;
   }
   .interior-texto h2 {
     font-size: 40px;
     font-weight: 200;
-  }
+  } */
 }

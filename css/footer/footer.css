@@ -1,0 +1,31 @@
+.footer-links {
+  line-height: 30px;
+  margin: 30px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.direitos {
+  color: #f7f7f7;
+  text-align: left;
+  margin: 30px;
+}
+
+.redes-sociais ul {
+  display: flex;
+  gap: 10px;
+  margin: 30px;
+  padding: 10px;
+}
+
+@media (max-width: 900px) {
+  .footer-links {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-top: 0.5rem;
+  }
+}
