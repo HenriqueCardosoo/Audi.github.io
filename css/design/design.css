@@ -114,6 +114,7 @@
   .design-texto p {
     padding: 30px;
     text-align: left;
+    top: -50px;
   }
   .porta-malas-texto h2 {
     font-size: 40px;
