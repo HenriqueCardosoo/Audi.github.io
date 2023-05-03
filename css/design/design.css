@@ -1,19 +1,20 @@
 .design-texto {
   margin: 0px;
+  text-align: center;
   text-align: left;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .design-texto h2 {
   font-size: 60px;
   font-weight: 200;
-  padding: 30px;
 }
 
 .design-texto p {
   top: -16px;
   position: relative;
   color: #4c4c4c;
-  padding: 30px;
 }
 
 .design-img img {
@@ -43,8 +44,10 @@
 
 .porta-malas-texto {
   color: #e7e7e7;
-  text-align: left;
   padding: 30px;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .porta-malas-texto h2 {
@@ -55,8 +58,10 @@
 
 .suspensao-texto {
   color: #e7e7e7;
-  text-align: left;
   padding: 100px;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .suspensao-texto h2 {

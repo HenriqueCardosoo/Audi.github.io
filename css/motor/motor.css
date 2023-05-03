@@ -4,6 +4,12 @@
   text-align: left;
 }
 
+.motor-texto {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
 .motor h2 {
   font-size: 60px;
   font-weight: 200;
@@ -17,11 +23,12 @@
 
 .motor-p {
   color: #4c4c4c;
-  margin: 30px;
 }
 
 .motor-img img {
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 1200px) {

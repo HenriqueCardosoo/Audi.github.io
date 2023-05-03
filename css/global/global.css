@@ -73,6 +73,12 @@ ul {
   font-size: 2rem;
 }
 
+.conjunto {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
 .texto {
   position: absolute;
   font-size: 45px;
