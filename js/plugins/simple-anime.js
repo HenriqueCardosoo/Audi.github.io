@@ -1,29 +1,28 @@
 window.SimpleAnime = class {
   constructor() {
-    (this.items = document.querySelectorAll("[data-anime]")), this.init();
+    (this.items = document.querySelectorAll('[data-anime]')), this.init();
   }
   animateItems() {
     this.items.forEach((t) => {
-      const e = Number(t.getAttribute("data-anime"));
+      const e = Number(t.getAttribute('data-anime'));
       isNaN(e) ||
         setTimeout(() => {
-          t.classList.add("anime");
+          t.classList.add('anime');
         }, e);
     });
   }
   handleVisibility() {
     void 0 !== document.visibilityState
-      ? "visible" === document.visibilityState && this.animateItems()
+      ? 'visible' === document.visibilityState && this.animateItems()
       : this.animateItems();
   }
   init() {
     (this.handleVisibility = this.handleVisibility.bind(this)),
       this.handleVisibility(),
-      document.addEventListener("visibilitychange", this.handleVisibility);
+      document.addEventListener('visibilitychange', this.handleVisibility);
   }
 };
 
-// debounce do lodash
 debounce = function (func, wait, immediate) {
   let timeout;
   return function (...args) {
@@ -39,8 +38,8 @@ debounce = function (func, wait, immediate) {
   };
 };
 // animacao
-const target = document.querySelectorAll("[data-anime]");
-const animationClass = "animate";
+const target = document.querySelectorAll('[data-anime]');
+const animationClass = 'animate';
 
 function animeScroll() {
   const windowTop = window.pageYOffset + (window.innerHeight * 3) / 4;
@@ -57,7 +56,7 @@ animeScroll();
 
 if (target.length) {
   window.addEventListener(
-    "scroll",
+    'scroll',
     debounce(function () {
       animeScroll();
     }, 200)
@@ -70,7 +69,7 @@ const observer = new IntersectionObserver(
 
     Array.from(entries).forEach((entry) => {
       if (entry.intersectionRatio >= 1) {
-        entry.target.classList.add("init-hidden-off");
+        entry.target.classList.add('init-hidden-off');
       }
     });
   },
@@ -79,6 +78,6 @@ const observer = new IntersectionObserver(
   }
 );
 
-Array.from(document.querySelectorAll(".init-hidden")).forEach((Element) => {
+Array.from(document.querySelectorAll('.init-hidden')).forEach((Element) => {
   observer.observe(Element);
 });
