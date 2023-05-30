@@ -49,7 +49,7 @@
 
 .header-menu a {
   text-decoration: none;
-  color: #e7e7e7;
+  color: #7d7d7d;
   font-size: 18px;
   position: relative;
   padding: 10px 0px 10px; /*diminuir no responsivo */
@@ -162,6 +162,9 @@
   }
   .logo {
     display: block;
+  }
+  .header-menu a {
+    color: #e7e7e7;
   }
 }
 
