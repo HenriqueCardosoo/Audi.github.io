@@ -207,11 +207,12 @@
 
 @media (max-width: 499px) {
   .header-menu {
+    top: 90px;
     gap: 10px;
   }
   .header-menu a {
-    font-size: 12px;
-    left: 25px;
+    font-size: 14px;
+    /* left: 25px; */
   }
   .header-bg {
     padding: 20px;
