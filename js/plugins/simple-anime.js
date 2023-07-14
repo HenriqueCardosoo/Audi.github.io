@@ -3,7 +3,7 @@ window.SimpleAnime = class {
     (this.items = document.querySelectorAll('[data-anime]')), this.init();
   }
   animateItems() {
-    this.items.forEach((t) => {
+    this.items.forEach(t => {
       const e = Number(t.getAttribute('data-anime'));
       isNaN(e) ||
         setTimeout(() => {
@@ -12,14 +12,10 @@ window.SimpleAnime = class {
     });
   }
   handleVisibility() {
-    void 0 !== document.visibilityState
-      ? 'visible' === document.visibilityState && this.animateItems()
-      : this.animateItems();
+    void 0 !== document.visibilityState ? 'visible' === document.visibilityState && this.animateItems() : this.animateItems();
   }
   init() {
-    (this.handleVisibility = this.handleVisibility.bind(this)),
-      this.handleVisibility(),
-      document.addEventListener('visibilitychange', this.handleVisibility);
+    (this.handleVisibility = this.handleVisibility.bind(this)), this.handleVisibility(), document.addEventListener('visibilitychange', this.handleVisibility);
   }
 };
 
@@ -64,20 +60,20 @@ if (target.length) {
 }
 
 const observer = new IntersectionObserver(
-  (entries) => {
+  entries => {
     console.log(entries);
 
-    Array.from(entries).forEach((entry) => {
+    Array.from(entries).forEach(entry => {
       if (entry.intersectionRatio >= 1) {
         entry.target.classList.add('init-hidden-off');
       }
     });
   },
   {
-    threshold: [0, 0.5, 1],
+    threshold: [0, 0.5, 1]
   }
 );
 
-Array.from(document.querySelectorAll('.init-hidden')).forEach((Element) => {
+Array.from(document.querySelectorAll('.init-hidden')).forEach(Element => {
   observer.observe(Element);
 });
