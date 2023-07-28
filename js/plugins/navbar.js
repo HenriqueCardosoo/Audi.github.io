@@ -8,7 +8,7 @@ export default function initNavBar() {
     headerMenu.classList.toggle('active');
   });
 
-  document.querySelectorAll('.nav-link').forEach((n) =>
+  document.querySelectorAll('.nav-link').forEach(n =>
     n.addEventListener('click', () => {
       hamburger.classList.remove('active');
       headerMenu.classList.remove('active');
