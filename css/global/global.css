@@ -1,5 +1,4 @@
 body {
-  margin: 0px;
   font-family: arial, sans-serif;
 }
 
@@ -55,10 +54,8 @@ ul {
   background: #141414;
   position: relative;
   max-width: 100%;
-  text-align: center;
-  flex-wrap: wrap;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  place-items: center;
 }
 
 .introducao p {
