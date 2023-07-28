@@ -1,4 +1,4 @@
-.experiencia-container {
+.experiencia {
   background: #141414;
   position: relative;
   max-width: 100%;
@@ -9,7 +9,7 @@
   padding-bottom: 120px;
 }
 
-.experiencia-container img {
+.experiencia img {
   max-width: 100%;
 }
 
@@ -17,7 +17,7 @@
   padding-top: 90px;
 }
 
-.experiencia {
+.experiencia-container {
   position: relative;
 }
 
@@ -29,7 +29,7 @@
 }
 
 @media (max-width: 800px) {
-  .experiencia-container {
+  .experiencia {
     grid-template-columns: 1fr;
   }
   .experiencia-bg {
@@ -38,13 +38,13 @@
 }
 
 @media (max-width: 500px) {
-  .experiencia {
+  .experiencia-container {
     top: 160px;
   }
 }
 
 @media (max-width: 430px) {
-  .experiencia {
+  .experiencia-container {
     top: auto;
   }
 }
