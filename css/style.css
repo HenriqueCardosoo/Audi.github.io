@@ -1,25 +1,25 @@
-@import "./global/global.css";
-@import "./global/header.css";
+@import './global/global.css';
+@import './global/header.css';
 
 /* especioficacao */
-@import "./especificacao/especificacao.css";
+@import './especificacao/especificacao.css';
 
 /* performace */
-@import "./performace/performace.css";
+@import './performace/performace.css';
 
-@import "./motor/motor.css";
+@import './motor/motor.css';
 
 /* experiencia */
-@import "./experiencia/experiencia.css";
+@import './experiencia/experiencia.css';
 
 /* design */
-@import "./design/design.css";
+@import './design/design.css';
 
 /* utilidades*/
-@import "./utilidades/animacao.css";
+@import './utilidades/animacao.css';
 
 /* interior */
-@import "./interior/interior.css";
+@import './interior/interior.css';
 
 /* footer */
-@import "./footer/footer.css";
+@import './footer/footer.css';
