@@ -46,7 +46,7 @@ img {
   gap: 20px;
 }
 
-.modelos-container dt::after {
+.filtro-modelos dt::after {
   content: '';
   display: inline-block;
   width: 14px;
@@ -57,6 +57,6 @@ img {
   transform: rotate(180deg);
 }
 
-.modelos-container.ativo dt::after {
+.filtro-modelos.ativo dt::after {
   transform: rotate(0);
 }
