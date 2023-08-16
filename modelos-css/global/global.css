@@ -16,11 +16,12 @@ img {
 
 .modelos-container {
   margin: 5% auto;
-  max-width: 1368px;
+  max-width: 1300px;
 }
 
 .modelos-text h1 {
   font-size: 4.5rem;
+  letter-spacing: 2px;
   font-weight: 200;
 }
 
@@ -34,10 +35,14 @@ img {
 .filtro-modelos p {
   display: flex;
   justify-content: start;
-  margin-left: 2vw;
+  margin-left: 4.5vh;
   font-size: 1.2rem;
   color: #f2f2f2;
   cursor: pointer;
+}
+
+.filtro-modelos.ativo p {
+  margin-left: 7vh;
 }
 
 .filtro-modelos {
@@ -67,4 +72,15 @@ img {
   top: 0;
   left: 0;
   overflow-y: auto;
+}
+
+@media (max-width: 1300px) {
+  .modelos-container {
+    transition: 0.3s;
+    max-width: 1000px;
+  }
+  .modelos-text h1 {
+    font-size: 2.5rem;
+    margin-left: 30px;
+  }
 }
