@@ -24,6 +24,13 @@ img {
   font-weight: 200;
 }
 
+.modelos-container section {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+}
+
 .filtro-modelos p {
   display: flex;
   justify-content: start;
@@ -34,19 +41,10 @@ img {
 }
 
 .filtro-modelos {
-  margin: 2vw auto;
-  border: 1px solid;
-  background-color: #141414;
+  background-color: #000;
 }
 
-.modelos-container dt {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 20px;
-}
-
-.filtro-modelos dt::after {
+.filtro-modelos section::after {
   content: '';
   display: inline-block;
   width: 14px;
@@ -57,6 +55,16 @@ img {
   transform: rotate(180deg);
 }
 
-.filtro-modelos.ativo dt::after {
+.filtro-modelos.ativo section::after {
   transform: rotate(0);
+}
+
+.filtro-modelos.ativo {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  max-height: calc(100vh - 0);
+  top: 0;
+  left: 0;
+  overflow-y: auto;
 }
