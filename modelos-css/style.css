@@ -1,3 +1,7 @@
 /* modelos */
 @import './global/header.css';
 @import './global/global.css';
+
+/* filtro */
+
+@import './filtro/filtro.css';
