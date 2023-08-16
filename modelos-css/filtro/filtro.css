@@ -1,0 +1,58 @@
+.filtro-bg {
+  display: flex;
+  max-width: 100%;
+  height: 100vh;
+  background-color: #262626;
+  display: none;
+}
+
+.filtro-bg.ativo {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 83%;
+  top: 60px;
+  left: 0;
+  overflow-y: auto;
+}
+
+.filtro-container {
+  margin: 50px;
+}
+
+.input-checkbox {
+  display: none;
+}
+
+.checkbox-label {
+  display: inline-block;
+  border: 1px solid;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.checkbox-label:hover {
+  background-color: #fff;
+  color: #262626;
+}
+
+fieldset {
+  display: flex;
+  border: none;
+  color: aliceblue;
+  font-size: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.estilos {
+  position: relative;
+  bottom: -40px;
+}
+
+.text-legend {
+  position: relative;
+  top: -20px;
+  color: #b3b3b3;
+}
