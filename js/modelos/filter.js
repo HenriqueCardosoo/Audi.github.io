@@ -14,4 +14,12 @@ export default function initFilter() {
       texto.textContent = 'Abrir Filtro';
     }
   });
+
+  const labels = document.querySelectorAll('.checkbox-label');
+
+  labels.forEach((label) => {
+    label.addEventListener('click', () => {
+      label.classList.toggle('selected');
+    });
+  });
 }
