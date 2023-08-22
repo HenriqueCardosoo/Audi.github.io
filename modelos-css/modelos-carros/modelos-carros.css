@@ -82,9 +82,13 @@
   .informacoes-container {
     left: 0px;
     bottom: -240px;
-    width: 300px;
+    width: 330px;
+  }
+
+  .informacoes-img {
+    overflow: hidden;
   }
   .img-container {
-    width: 80px;
+    width: 40px;
   }
 }
