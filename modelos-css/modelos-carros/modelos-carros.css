@@ -68,7 +68,7 @@
 
 @media (max-width: 500px) {
   .img-text img {
-    max-width: 500px;
+    max-width: 390px;
     left: 0;
   }
   .img-svg {
@@ -80,9 +80,10 @@
     top: -50px;
   }
   .informacoes-container {
-    left: 0px;
+    left: -5px;
     bottom: -240px;
-    width: 330px;
+    width: 300px;
+    overflow: hidden;
   }
 
   .informacoes-img {
