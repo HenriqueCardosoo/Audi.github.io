@@ -10,10 +10,12 @@
 
 .informacoes-container {
   position: relative;
-  width: 300px;
+  width: 400px;
+  max-width: 300px;
   height: 400px;
   background-color: #fff;
-  left: -270px;
+  transition: height 0.3s ease;
+  left: -28vh;
 }
 
 .modelos-grupo {
@@ -53,16 +55,29 @@
 
 @media (max-width: 1300px) {
   .img-text img {
-    max-width: 500px;
+    max-width: 600px;
   }
   .img-svg {
-    width: 300px;
+    width: 400px;
+  }
+  .informacoes-container {
+    width: 27vh;
   }
 }
 
 @media (max-width: 900px) {
   .img-text img {
-    max-width: 900px;
+    max-width: 600px;
+  }
+  .informacoes-container {
+    left: -60vh;
+    bottom: -30vh;
+    width: 250px;
+    height: 350px;
+    margin-bottom: 300px;
+  }
+  .modelos-grupo {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -80,9 +95,11 @@
     top: -50px;
   }
   .informacoes-container {
-    left: -5px;
+    left: -30px;
     bottom: -240px;
-    width: 300px;
+    width: 180px;
+    height: 300px;
+    margin-bottom: 230px;
     overflow: hidden;
   }
 
