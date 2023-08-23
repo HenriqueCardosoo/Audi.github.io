@@ -16,6 +16,7 @@
   background-color: #fff;
   transition: height 0.3s ease;
   left: -28vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .modelos-grupo {
@@ -51,6 +52,15 @@
 .botao-informacao a {
   text-decoration: none;
   color: #000;
+}
+
+.name-modelo {
+  font-weight: 600;
+}
+
+.versao-modelo {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 @media (max-width: 1300px) {
