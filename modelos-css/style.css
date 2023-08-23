@@ -6,3 +6,6 @@
 /* filtro */
 
 @import './filtro/filtro.css';
+
+/* footer */
+@import './footer/footer.css';
