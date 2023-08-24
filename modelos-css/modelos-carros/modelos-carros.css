@@ -52,6 +52,7 @@
 .botao-informacao a {
   text-decoration: none;
   color: #000;
+  letter-spacing: 1px;
 }
 
 .name-modelo {
@@ -79,6 +80,9 @@
   .img-text img {
     max-width: 600px;
   }
+  .img-svg {
+    max-width: 300px;
+  }
   .informacoes-container {
     left: -60vh;
     bottom: -30vh;
@@ -97,8 +101,7 @@
     left: 0;
   }
   .img-svg {
-    width: 280px;
-    margin: 10px;
+    width: 250px;
   }
   .img-text {
     position: relative;
