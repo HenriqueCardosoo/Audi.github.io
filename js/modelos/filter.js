@@ -14,7 +14,7 @@ export default function initFilter() {
       texto.textContent = 'Abrir Filtro';
     }
   });
-
+  // deixar marcado a seleção dos modelos
   const labels = document.querySelectorAll('.checkbox-label');
 
   labels.forEach((label) => {
