@@ -49,6 +49,7 @@ img {
 
 .filtro-modelos {
   background-color: #000;
+  z-index: 1;
 }
 
 .filtro-modelos section::after {
