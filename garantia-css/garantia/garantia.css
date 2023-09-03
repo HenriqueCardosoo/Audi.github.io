@@ -1,0 +1,137 @@
+.garantia-container {
+  font-size: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.garantia-img-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.garantia-img-principal h1 {
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 90px;
+  font-size: 20px;
+  padding: 5px;
+  letter-spacing: 1px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.conteudo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-mobile {
+  display: none;
+  max-width: 100%;
+}
+
+.img-desktop {
+  width: 1400px;
+  max-width: 100%;
+}
+
+.conteudo-text {
+  width: 750px;
+  position: relative;
+  margin: 40px;
+}
+
+.conteudo-text h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.conteudo-text span {
+  font-weight: bold;
+}
+
+.garantia-img {
+  margin: 50px;
+}
+
+.garantia-img img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 80px;
+}
+
+.garantia-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cadastre {
+  position: relative;
+  top: -70px;
+}
+
+.cadastre a {
+  position: relative;
+  bottom: -10px;
+  border: 2px solid;
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .conteudo-container {
+    grid-template-columns: 1fr;
+  }
+  .conteudo-text {
+    width: 92%;
+  }
+  .garantia-img-principal h1 {
+    position: relative;
+    margin-left: 30px;
+    border: none;
+    background-color: transparent;
+    bottom: -20px;
+  }
+  .garantia-container {
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 950px) {
+  .img-mobile {
+    display: block;
+    width: 900px;
+    height: auto;
+  }
+  .img-desktop {
+    display: none;
+  }
+  .conteudo-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .conteudo-text {
+    width: 92%;
+    margin: 20px;
+  }
+  .garantia-img {
+    margin: 15px;
+    max-width: 100%;
+  }
+  .garantia-img-principal h1 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+}
