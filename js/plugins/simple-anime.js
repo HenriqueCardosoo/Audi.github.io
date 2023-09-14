@@ -1,29 +1,41 @@
 window.SimpleAnime = class {
   constructor() {
-    (this.items = document.querySelectorAll('[data-anime]')), this.init();
+    this.items = document.querySelectorAll('[data-anime]');
+    this.init();
   }
+
   animateItems() {
-    this.items.forEach(t => {
+    this.items.forEach((t) => {
       const e = Number(t.getAttribute('data-anime'));
-      isNaN(e) ||
+      if (!Number.isNaN(e))
         setTimeout(() => {
           t.classList.add('anime');
         }, e);
     });
   }
+
   handleVisibility() {
-    void 0 !== document.visibilityState ? 'visible' === document.visibilityState && this.animateItems() : this.animateItems();
+    if (document.visibilityState !== undefined) {
+      if (document.visibilityState === 'visible') {
+        this.animateItems();
+      }
+    } else {
+      this.animateItems();
+    }
   }
+
   init() {
-    (this.handleVisibility = this.handleVisibility.bind(this)), this.handleVisibility(), document.addEventListener('visibilitychange', this.handleVisibility);
+    this.handleVisibility = this.handleVisibility.bind(this);
+    this.handleVisibility();
+    document.addEventListener('visibilitychange', this.handleVisibility);
   }
 };
 
-debounce = function (func, wait, immediate) {
+function debounce(func, wait, immediate) {
   let timeout;
-  return function (...args) {
+  return function myFunction(...args) {
     const context = this;
-    const later = function () {
+    const later = function later() {
       timeout = null;
       if (!immediate) func.apply(context, args);
     };
@@ -32,14 +44,14 @@ debounce = function (func, wait, immediate) {
     timeout = setTimeout(later, wait);
     if (callNow) func.apply(context, args);
   };
-};
+}
 // animacao
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
 function animeScroll() {
   const windowTop = window.pageYOffset + (window.innerHeight * 3) / 4;
-  target.forEach(function (element) {
+  target.forEach((element) => {
     if (windowTop > element.offsetTop) {
       element.classList.add(animationClass);
     } else {
@@ -53,17 +65,17 @@ animeScroll();
 if (target.length) {
   window.addEventListener(
     'scroll',
-    debounce(function () {
+    debounce(() => {
       animeScroll();
     }, 200)
   );
 }
 
 const observer = new IntersectionObserver(
-  entries => {
+  (entries) => {
     console.log(entries);
 
-    Array.from(entries).forEach(entry => {
+    Array.from(entries).forEach((entry) => {
       if (entry.intersectionRatio >= 1) {
         entry.target.classList.add('init-hidden-off');
       }
@@ -74,6 +86,6 @@ const observer = new IntersectionObserver(
   }
 );
 
-Array.from(document.querySelectorAll('.init-hidden')).forEach(Element => {
+Array.from(document.querySelectorAll('.init-hidden')).forEach((Element) => {
   observer.observe(Element);
 });
