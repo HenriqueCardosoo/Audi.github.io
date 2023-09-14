@@ -1,7 +1,7 @@
 export default function initNavBar() {
   const hamburger = document.querySelector('.hamburger');
   const headerMenu = document.querySelector('.header-menu');
-  var ultimoScroll = 0;
+  let ultimoScroll = 0;
 
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -15,8 +15,8 @@ export default function initNavBar() {
     })
   );
 
-  window.addEventListener('scroll', function () {
-    var atualScroll = window.pageYOffset || document.documentElement.scrollTop;
+  window.addEventListener('scroll', () => {
+    const atualScroll = window.pageYOffset || document.documentElement.scrollTop;
 
     if (atualScroll > ultimoScroll) {
       if (headerMenu.classList.contains('active')) {
