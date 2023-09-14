@@ -1,10 +1,10 @@
 export default function initPerformace() {
-  document.addEventListener('DOMContentLoaded', function () {
-    var elementos = document.querySelectorAll('.performace'); // Substitua '.seu-elemento' pelo seletor dos elementos desejados
+  document.addEventListener('DOMContentLoaded', () => {
+    const elementos = document.querySelectorAll('.performace'); // Substitua '.seu-elemento' pelo seletor dos elementos desejados
     function verificarVisibilidade() {
-      for (var i = 0; i < elementos.length; i++) {
-        var elemento = elementos[i];
-        var rect = elemento.getBoundingClientRect();
+      for (let i = 0; i < elementos.length; i += 1) {
+        const elemento = elementos[i];
+        const rect = elemento.getBoundingClientRect();
 
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
           elemento.classList.add('ativo');
