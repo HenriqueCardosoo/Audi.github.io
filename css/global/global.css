@@ -44,6 +44,7 @@ ul {
 
 .conteudo {
   position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .introducao {
@@ -52,7 +53,7 @@ ul {
 }
 
 .introducao-container {
-  background: #141414;
+  background: #000;
   position: relative;
   max-width: 100%;
   display: grid;
@@ -78,12 +79,17 @@ ul {
   margin: 30px;
 }
 
+section {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .texto {
   position: absolute;
   font-size: 45px;
   left: 40px;
   bottom: 70px;
   color: #ffffff;
+  font-weight: 400;
 }
 
 .botao {
