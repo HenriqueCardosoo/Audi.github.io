@@ -1,5 +1,5 @@
 .experiencia {
-  background: #141414;
+  background: #000;
   position: relative;
   max-width: 100%;
   text-align: center;
@@ -15,6 +15,7 @@
 
 .experiencia-bg h2 {
   padding-top: 90px;
+  font-weight: 500;
 }
 
 .experiencia-container {
@@ -22,8 +23,6 @@
 }
 
 .experiencia-bg {
-  /* grid-row: 1; */
-  background-color: #141414;
   color: white;
   margin: 30px;
 }
