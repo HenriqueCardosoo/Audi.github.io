@@ -12,10 +12,12 @@
 
 .conheca h1 {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 .conheca {
   bottom: -10rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .conheca p {
