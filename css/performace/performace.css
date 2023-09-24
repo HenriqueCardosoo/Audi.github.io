@@ -22,6 +22,7 @@
   font-weight: lighter;
   vertical-align: baseline;
   margin: 0px;
+  font-weight: 400;
 }
 
 .performace-cv {
@@ -86,9 +87,10 @@
 }
 
 .desempenho h1 {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   position: relative;
   bottom: -90px;
+  font-weight: 400;
 }
 
 .desempenho a {
@@ -161,9 +163,6 @@
 @media (max-width: 1200px) {
   .desempenho a {
     font-size: 15px;
-  }
-  .desempenho h1 {
-    font-size: 2rem;
   }
 }
 
