@@ -23,3 +23,6 @@
 
 /* footer */
 @import './footer/footer.css';
+
+/* estilos */
+@import './utilidades/estilos.css';
